@@ -1,37 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   pal_utils.c                                        :+:      :+:    :+:   */
+/*   max.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/11 17:25:47 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/02/07 12:53:13 by imutavdz         ###   ########.fr       */
+/*   Created: 2025/02/07 12:00:16 by imutavdz          #+#    #+#             */
+/*   Updated: 2025/02/07 12:08:20 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "biggest_pal.h"
-
-int ft_strlen(char *str)
+/*find the maximum integer in an array.
+array check len
+store into variable each index if > than current*/
+int max(int *tab, unsigned int len)
 {
-	int len = 0;
+	int i;
+	int highest;
 
-	while (str[len])
-		len++;
-	return (len);
+	i = 1;
+	highest = tab[0];
+	if (!len)
+		return (-1);
+	while (i < len)
+	{
+		if (tab[i] > highest)
+			highest = tab[i];
+		i++;
+	}
+	return (highest);
 }
- void ft_putendl(char *str)
- {
- 	ft_putstr(str);
- 	ft_putchar('\n');
- }
-
- void ft_putstr(char *str)
- {
- 	while (*str)
- 		ft_putchar(*str++);
- }
- void ft_putchar(char c)
- {
- 	write(1, &c, 1);
- }
- 
