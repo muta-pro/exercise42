@@ -6,7 +6,7 @@
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 20:48:18 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/02/07 22:03:10 by imutavdz         ###   ########.fr       */
+/*   Updated: 2025/02/14 10:26:12 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Write a program that takes two strings and displays, without doubles, the

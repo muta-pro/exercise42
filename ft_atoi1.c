@@ -6,21 +6,17 @@
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 13:24:55 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/02/13 19:40:54 by imutavdz         ###   ########.fr       */
+/*   Updated: 2025/02/14 10:26:04 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 // Write a function that converts the string argument str (base N <= 16)
 // to an integer (base 10) and returns it.
-
 // The characters recognized in the input are: 0123456789abcdef
 // Those are, of course, to be trimmed according to the requested base. For
 // example, base 4 recognizes "0123" and base 16 recognizes "0123456789abcdef".
-
 // Uppercase letters must also be recognized: "12fdb3" is the same as "12FDB3".
-
 // Minus signs ('-') are interpreted only if they are the first character of the
 // string.
-
 // Your function must be declared as follows
 #include <stdio.h>
 #include <assert.h>

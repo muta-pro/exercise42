@@ -6,7 +6,7 @@
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 20:17:39 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/02/09 16:15:30 by imutavdz         ###   ########.fr       */
+/*   Updated: 2025/02/14 00:26:12 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Write a program that takes a string and displays it, replacing each of its

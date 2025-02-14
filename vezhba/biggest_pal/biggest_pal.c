@@ -6,7 +6,7 @@
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/11 16:05:32 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/01/11 21:08:53 by imutavdz         ###   ########.fr       */
+/*   Updated: 2025/02/14 10:26:30 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 //input handling - only one argument or print newline

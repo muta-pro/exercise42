@@ -6,7 +6,7 @@
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 11:25:06 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/02/07 11:54:11 by imutavdz         ###   ########.fr       */
+/*   Updated: 2025/02/14 10:26:23 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* printing numbers from 1 to 100, but with a twist:

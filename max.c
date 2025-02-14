@@ -6,7 +6,7 @@
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 12:00:16 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/02/07 12:08:20 by imutavdz         ###   ########.fr       */
+/*   Updated: 2025/02/14 10:26:21 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*find the maximum integer in an array.
