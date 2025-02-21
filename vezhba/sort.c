@@ -6,7 +6,7 @@
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 18:10:09 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/02/19 14:15:12 by imutavdz         ###   ########.fr       */
+/*   Updated: 2025/02/21 10:05:56 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
@@ -30,15 +30,15 @@ int find_smallest(int arr[], int len)
 }
 void select_sort(int arr[], int len)
 {
-	int i = 0;
-	int smallest_ndx;
+	int i = 0; //start at the  beginning o te array
+	int smallest_ndx; //store index of smallest n
 	int temp;
 
 	while (i < len - 1)
-	{
+	{//find smallest num in unsorted part form i on
 		smallest_ndx = find_smallest(arr + i, len - i) + i;
-		temp = arr[i];
-		arr[i] = arr[smallest_ndx];
+		temp = arr[i];//swap current with smallest num found
+		arr[i] = arr[smallest_ndx]; 
 		arr[smallest_ndx] = temp;
 		i++;
 	}
