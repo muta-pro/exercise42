@@ -6,7 +6,7 @@
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/16 19:00:06 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/03/16 21:08:16 by imutavdz         ###   ########.fr       */
+/*   Updated: 2025/03/21 19:50:50 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 //ROT13 program takes the string and displays it, replacing each letter by the
@@ -37,7 +37,46 @@
 // 		write(1, "\n", 1);
 // 	return (0);
 // }
-
+//EXAM VERSION
+int main(int argc, char const *argv[])
+{
+	int i = 0;
+	char *str = argv[1];
+	
+	if (argc == 2)
+	{
+		while (str[i])
+		{
+			if (str[i] > 64 && str[i] < 78)
+			{
+				str[i] = str[i] + 13;
+				write(1, str[i], 1);
+			}
+			else if (str[i] > 77 && str[i] < 91)
+			{
+				str[i] = str[i] - 64 + 13;
+				write(1, str[i], 1);
+			}
+			else if (str[i] > 96 && str[i] < 110)
+			{
+				str[i] = str[i] + 13;
+				write(1, str[i], 1);
+			}
+			else if (str[i] > 109 && str[i] < 123)
+			{
+				str[i] = str[i] - 64 + 13;
+				write(1, &str[i], 1);
+			}
+			else
+				write(1, str[i], 1);
+			i++;
+		}
+	}
+	else
+		write(1, &str[i], 1);
+	return 0;
+}
+//OLD VERSION
 void ft_putchar(char c)
 {
 	write(1, &c, 1);
