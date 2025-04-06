@@ -6,18 +6,20 @@
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 22:05:35 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/02/21 10:05:59 by imutavdz         ###   ########.fr       */
+/*   Updated: 2025/04/03 05:58:27 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 //we are using ASCII value of each character as a coordinate in our array
 #include <stdio.h>
 
-int is_anagram(char *a, char *b)
+int	is_anagram(char *a, char *b)
 {
-	char tab[127] = {0};
-	int i = 0;
-	int j = 0;
+	char	tab[127] = {0};
+	int	i; 
+	int	j;
 
+	i = 0;
+	j = 0;
 	while (*a)//dereference pointer getting the character
 	{
 		tab[(int)*a] += 1;//converts char to ascii value which becomes index in tab

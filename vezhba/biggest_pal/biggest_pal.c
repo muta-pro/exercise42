@@ -6,7 +6,7 @@
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/11 16:05:32 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/02/21 12:33:55 by imutavdz         ###   ########.fr       */
+/*   Updated: 2025/04/03 23:19:26 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 //input handling - only one argument or print newline
@@ -16,19 +16,19 @@
 // == palindrome check
 #include <unistd.h>
 
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	int len = 0;
+	int	len = 0;
 
 	while (str[len])
 		len++;
 	return (len);
 }
 
-int find_pal(int left, int right, char *str)
+int	find_pal(int left, int right, char *str)
 {
-	int len = ft_strlen(str);//boundry checks
-	int lenpal;
+	int	len = ft_strlen(str);//boundry checks
+	int	lenpal;
 
 	while (left >= 0 && right < len && str[left] == str[right])
 	{
@@ -39,13 +39,13 @@ int find_pal(int left, int right, char *str)
 	return (lenpal);
 }
 
-void biggest_pal(char *str)
+void	biggest_pal(char *str)
 {
-	int start = 0;
-	int max_len = 0;
-	int len = ft_strlen(str);
-	int current_len;
-	int i = 0;
+	int	start = 0;
+	int	max_len = 0;
+	int	len = ft_strlen(str);
+	int	current_len;
+	int	i = 0;
 
 	while (i < len)
 	{
@@ -65,10 +65,10 @@ void biggest_pal(char *str)
 	}
 	if (max_len > 0)
 		write (1, str + start, max_len);
-	write(1, '\n', 1);
+	write(1, "\n", 1);
 }
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	if (argc == 2 && argv[1][0] != '\0')
 		biggest_pal(argv[1]);

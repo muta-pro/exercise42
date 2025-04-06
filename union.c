@@ -6,7 +6,7 @@
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 20:48:18 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/02/14 10:26:12 by imutavdz         ###   ########.fr       */
+/*   Updated: 2025/04/03 05:12:25 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Write a program that takes two strings and displays, without doubles, the
@@ -19,13 +19,14 @@ If the number of arguments is not 2, the program displays \n.
 */
 #include <unistd.h>
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
-int is_dup(char *str, char c, int until)
+
+int	is_dup(char *str, char c, int until)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < until)
@@ -37,10 +38,10 @@ int is_dup(char *str, char c, int until)
 	return (0); //false - char is unique to print
 }
 
-void uni(char *str1, char *str2)
+void	uni(char *str1, char *str2)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 0;
@@ -59,13 +60,13 @@ void uni(char *str1, char *str2)
 	write (1, "\n", 1);
 }
 
-int main(int argc, char *argv[])
+int	main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
 		write (1, "\n", 1);
-			return (1);
+		return (1);
 	}
 	uni(argv[1], argv[2]);
-	return 0;
+	return (0);
 }

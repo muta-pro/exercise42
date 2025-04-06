@@ -6,7 +6,7 @@
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 13:24:55 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/02/14 10:26:04 by imutavdz         ###   ########.fr       */
+/*   Updated: 2025/04/03 23:19:27 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 // Write a function that converts the string argument str (base N <= 16)
@@ -21,7 +21,7 @@
 #include <stdio.h>
 #include <assert.h>
 
-int get_base_value(char c, int base)//gives decimal value of char
+int	get_base_value(char c, int base)//gives decimal value of char
 {
 	if (c >= '0' && c <= '9')//if char is a digit
 		return (c - '0');//0 is 48
@@ -34,8 +34,8 @@ int get_base_value(char c, int base)//gives decimal value of char
 
 int	ft_atoi_base(const char *str, int str_base)//given number in str_base
 {													//convert in base 10
-	int	sign;
 	int	result;
+	int	sign;
 	int	value;
 
 	if (str_base < 2 || str_base > 16) //check if base valid
@@ -52,10 +52,10 @@ int	ft_atoi_base(const char *str, int str_base)//given number in str_base
 	else if (*str == '+')
 		str++; //skip the plus
 	while (*str)
-		{
-			value = get_base_value(*str, str_base);
-			if (value == -1 || value >= str_base) //stop if invalif character
-				break;
+	{
+		value = get_base_value(*str, str_base);
+		if (value == -1 || value >= str_base) //stop if invalif character
+			break;
 		result = result * str_base + value;//building numb using POSITIONAL NOTATION
 		str++;							//RULE: result = result x base + value
 	}
