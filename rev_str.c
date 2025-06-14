@@ -6,7 +6,7 @@
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 16:20:40 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/02/14 19:45:13 by imutavdz         ###   ########.fr       */
+/*   Updated: 2025/05/02 12:52:17 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 //write function that prints string in revers without modifying the stirng
@@ -26,7 +26,7 @@ char *rev_str(char *str)
 {
 	if (!str)
 		return (0);
-	int len = len_str(str);
+	int	len = len_str(str);
 
 	while (len > 0)
 	{
@@ -35,7 +35,8 @@ char *rev_str(char *str)
 	}
 	return (str);//returning the original pointer
 }
-int main()
+
+int	main()
 {
 	rev_str("");
 	write(1, "\n", 1);

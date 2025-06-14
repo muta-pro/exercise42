@@ -6,7 +6,7 @@
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/21 13:54:56 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/03/15 22:05:37 by imutavdz         ###   ########.fr       */
+/*   Updated: 2025/05/02 05:45:33 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -55,9 +55,9 @@ followed by a newline.
 
 //SPLITTED VERSION
 
-void character(char c)
+void	character(char c)
 {
-	int times_index;
+	int	times_index;
 
 	times_index = 0;
 	if (c > 64 && c < 91)
@@ -81,7 +81,7 @@ void character(char c)
 		write(1, &c, 1);
 }
 
-void string(char *str)
+void	string(char *str)
 {
 	int i;
 
@@ -93,7 +93,8 @@ void string(char *str)
 	}
 	write(1, "\n", 1);
 }
-int main(int arc, char *arv[])
+
+int	main(int arc, char *arv[])
 {
 	if (arc == 2)
 	{

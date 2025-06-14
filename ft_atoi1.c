@@ -6,7 +6,7 @@
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 13:24:55 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/04/03 23:19:27 by imutavdz         ###   ########.fr       */
+/*   Updated: 2025/05/02 11:56:35 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 // Write a function that converts the string argument str (base N <= 16)
@@ -26,9 +26,9 @@ int	get_base_value(char c, int base)//gives decimal value of char
 	if (c >= '0' && c <= '9')//if char is a digit
 		return (c - '0');//0 is 48
 	else if (c >= 'a' && c <= 'f')//if it's lowercase hex
-		return (c - 'a' + 10);//65 + 10
+		return (c - 'a' + 10);//97 + 10
 	else if (c >= 'A' && c <= 'F')
-		return (c - 'A' + 10);//97 - a + 10
+		return (c - 'A' + 10);//65 - a + 10
 	return (-1);//invalid character
 }
 
@@ -57,7 +57,7 @@ int	ft_atoi_base(const char *str, int str_base)//given number in str_base
 		if (value == -1 || value >= str_base) //stop if invalif character
 			break;
 		result = result * str_base + value;//building numb using POSITIONAL NOTATION
-		str++;							//RULE: result = result x base + value
+		str++;						//RULE: result = result x base + value
 	}
 	return (result * sign);
 }

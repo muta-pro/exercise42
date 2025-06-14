@@ -6,7 +6,7 @@
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/16 19:00:06 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/03/25 12:42:11 by imutavdz         ###   ########.fr       */
+/*   Updated: 2025/05/02 12:54:14 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 //ROT13 program takes the string and displays it, replacing each letter by the
@@ -41,7 +41,7 @@
 int main(int argc, char const *argv[])
 {
 	int i = 0;
-	char *str =(char *)argv[1];
+	char	*str =(char *)argv[1];
 	
 	if (argc == 2)
 	{
@@ -84,9 +84,10 @@ void ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
-void rot13(char *str)
+
+void	rot13(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i])
@@ -101,7 +102,7 @@ void rot13(char *str)
 	}
 }
 
-int main(int argc, char *argv[])
+int	main(int argc, char *argv[])
 {
 	if (argc == 2)
 		rot13(argv[1]);

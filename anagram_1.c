@@ -6,7 +6,7 @@
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/21 17:50:55 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/04/03 05:25:40 by imutavdz         ###   ########.fr       */
+/*   Updated: 2025/05/02 06:05:56 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 //write program that takes two strings
@@ -19,13 +19,13 @@
 #include <unistd.h>
 
 int	is_anagram(char *s1, char *s2);
+
 int	main(int argc, char *argv[])
 {
 	int	result;
 
 	if (argc == 3)
 	{
-
 		result = is_anagram(argv[1], argv[2]);
 		if (result == 0)
 			write(1, "yes", 3);
@@ -35,6 +35,7 @@ int	main(int argc, char *argv[])
 	else
 		write(1, "shit", 4);
 }
+
 int	is_anagram(char *s1, char *s2)
 {
 	int	tab[127] = {0};

@@ -6,7 +6,7 @@
 /*   By: imutavdz <imutavdz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 16:52:48 by imutavdz          #+#    #+#             */
-/*   Updated: 2025/04/03 20:52:20 by imutavdz         ###   ########.fr       */
+/*   Updated: 2025/05/02 11:57:44 by imutavdz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 //we need the lenght of the palindrome found
@@ -88,7 +88,8 @@ int	find_pa_len(char *s, int l, int r)
 	}
 	return (r - l - 1);
 }
-void printpal(char *s, int start, int len)
+
+void	printpal(char *s, int start, int len)
 {
 	while (len > 0)
 	{
